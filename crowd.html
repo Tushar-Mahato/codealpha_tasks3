@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="crowdstyles.css">
+    <title>Crowdfunding Platform</title>
+</head>
+<body>
+    <header>
+        <h1>Crowdfunding Platform</h1>
+    </header>
+    
+    <main>
+        <section id="create-project">
+            <h2>Create a New Project</h2>
+            <form id="project-form">
+                <input type="text" id="title" placeholder="Project Title" required>
+                <textarea id="description" placeholder="Project Description" required></textarea>
+                <input type="number" id="goal" placeholder="Funding Goal ($)" required>
+                <button type="submit">Create Project</button>
+            </form>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <div id="project-list"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Crowdfunding Platform</p>
+    </footer>
+
+    <script src="crowdscript.js"></script>
+</body>
+</html>
